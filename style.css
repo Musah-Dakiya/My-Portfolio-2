@@ -175,7 +175,7 @@ footer {
     border-radius: 50%;        /* makes the image circular */
     object-fit: cover;         /* ensures image fits perfectly */
     margin: 20px auto;         /* centers image horizontally */
-    border: 4px solid #fff;    /* white border around image */
+    border: 4px solid #fff;    
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
