@@ -130,7 +130,7 @@ header .container {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-/* === CONTACT SECTION === */
+
 .contact {
     background: white;
     text-align: center;
@@ -158,7 +158,7 @@ button.btn {
     cursor: pointer;
 }
 
-/* === FOOTER === */
+
 footer {
     background: #222;
     color: white;
@@ -172,9 +172,9 @@ footer {
     display: block;
     width: 180px;              
     height: 180px;
-    border-radius: 50%;        /* makes the image circular */
-    object-fit: cover;         /* ensures image fits perfectly */
-    margin: 20px auto;         /* centers image horizontally */
+    border-radius: 50%;        
+    object-fit: cover;         
+    margin: 20px auto;         
     border: 4px solid #fff;    
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
