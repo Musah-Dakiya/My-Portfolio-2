@@ -19,7 +19,7 @@ body {
 
 /* === HEADER === */
 header {
-    background-color: #222;
+    background-color: #080808;
     color: white;
     padding: 20px 0;
     position: sticky;
@@ -45,7 +45,7 @@ header .container {
 }
 
 .nav-links a {
-    color: white;
+    color: hwb(0 94% 5%);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -92,10 +92,11 @@ header .container {
     background: #ffeb3b;
 }
 
+/* === ABOUT SECTION === */
 .about {
     background: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 120px 20px;
 }
 
 .about h2 {
@@ -130,7 +131,7 @@ header .container {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-
+/* === CONTACT SECTION === */
 .contact {
     background: white;
     text-align: center;
@@ -158,7 +159,7 @@ button.btn {
     cursor: pointer;
 }
 
-
+/* === FOOTER === */
 footer {
     background: #222;
     color: white;
@@ -172,7 +173,7 @@ footer {
     display: block;
     width: 180px;              
     height: 180px;
-    border-radius: 50%;        
+    border-radius: 50%;       
     object-fit: cover;         
     margin: 20px auto;         
     border: 4px solid #fff;    
@@ -233,7 +234,7 @@ section#about {
     padding: 120px 20px;
   }
   
-  
+  /* About Page */
   .about {
     text-align: center;
     padding: 60px 20px;
@@ -257,6 +258,24 @@ section#about {
     margin-right: auto;    
 }
 
+.about-profile-img {
+    display: block;
+    width: 200px;             
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 40px auto 20px auto; 
+    border: 4px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-profile-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 25px rgba(121, 213, 241, 0.3);
+}
+
+/* Contact Page*/
 .contact-info {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -266,37 +285,10 @@ section#about {
 
 .contact-info a {
     color: #006064;
-    text-decoration: none;
+    text-decoration: #00bcd4;
     font-weight: 500;
 }
 
 .contact-info a:hover {
     text-decoration: underline;
-}
-
-@media (max-width: 1024px) {  
-    .hero-profile-img {
-        width: 150px;
-        height: 150px;
-        top: 30px;
-        left: 15px;
-    }
-}
-
-@media (max-width: 768px) { 
-    .hero-profile-img {
-        width: 120px;
-        height: 120px;
-        top: 20px;
-        left: 10px;
-    }
-}
-
-@media (max-width: 480px) {  
-    .hero-profile-img {
-        width: 100px;
-        height: 100px;
-        top: 10px;
-        left: 10px;
-    }
 }
