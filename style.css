@@ -401,3 +401,113 @@ section#about {
 .contact-info a:hover {
     text-decoration: underline;
 }
+
+
+/* ===== HOME SECTION ===== */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 120px 10% 60px; /* space for nav + bottom padding */
+  background: white;
+}
+
+.home-content {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 40px;
+}
+
+.home-content h1 {
+  font-size: 2.5em;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.home-content h2 {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+
+.home-content p {
+  font-size: 1.05em;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  background: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #008c9e;
+}
+
+/* Profile Image */
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #00bcd4;
+}
+
+/* ===== RESPONSIVENESS ===== */
+@media (max-width: 992px) {
+  .home {
+      flex-direction: column;
+      text-align: center;
+      padding: 120px 5% 60px;
+  }
+
+  .home-content {
+      padding: 0;
+  }
+
+  .hero-img {
+      margin-top: 30px;
+      order: -1; /* ensures image comes above text on smaller screens */
+  }
+
+  .hero-img img {
+      width: 220px;
+      height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-content h1 {
+      font-size: 1.8em;
+  }
+
+  .home-content h2 {
+      font-size: 1.1em;
+  }
+
+  .home-content p {
+      font-size: 0.95em;
+  }
+
+  .hero-img img {
+      width: 180px;
+      height: 180px;
+  }
+
+  .btn {
+      padding: 8px 16px;
+      font-size: 0.9em;
+  }
+}
